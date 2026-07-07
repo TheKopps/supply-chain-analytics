@@ -1,0 +1,142 @@
+2026-07-07 01:53:22 | INFO | ============================================================
+2026-07-07 01:53:22 | INFO | SUPPLY CHAIN ANALYTICS PLATFORM
+2026-07-07 01:53:22 | INFO | ============================================================
+2026-07-07 01:53:22 | INFO | 1. Loading raw datasets...
+2026-07-07 01:53:23 | INFO | Raw datasets loaded successfully.
+2026-07-07 01:53:23 | INFO | 2. Creating analytical sales table...
+2026-07-07 01:53:26 | INFO | Saved analytical table: C:\Users\adrie\Documents\supply_chain_analytics\data\processed\sales_analytics.csv
+2026-07-07 01:53:26 | INFO | 2.1 Validating raw analytical table...
+2026-07-07 01:53:27 | INFO | Validation report saved.
+2026-07-07 01:53:27 | INFO | 3. Cleaning data...
+2026-07-07 01:53:31 | INFO | Saved clean table: C:\Users\adrie\Documents\supply_chain_analytics\data\processed\sales_clean.csv
+2026-07-07 01:53:31 | INFO | 4. Adding business features...
+2026-07-07 01:53:35 | INFO | Saved featured table: C:\Users\adrie\Documents\supply_chain_analytics\data\processed\sales_featured.csv
+2026-07-07 01:53:35 | INFO | 5. Computing KPIs...
+2026-07-07 01:53:35 | INFO | KPI summary saved.
+2026-07-07 01:53:35 | INFO | 6. Exporting Power BI tables...
+2026-07-07 01:53:37 | INFO | Power BI tables exported successfully.
+2026-07-07 01:53:37 | INFO | Pipeline completed successfully in 15.51 seconds.
+2026-07-07 02:00:23 | INFO | ============================================================
+2026-07-07 02:00:23 | INFO | SUPPLY CHAIN ANALYTICS PLATFORM
+2026-07-07 02:00:23 | INFO | ============================================================
+2026-07-07 02:00:23 | INFO | 1. Loading raw datasets...
+2026-07-07 02:00:24 | INFO | Raw datasets loaded successfully.
+2026-07-07 02:00:24 | INFO | 2. Creating analytical sales table...
+2026-07-07 02:00:27 | INFO | Saved analytical table: C:\Users\adrie\Documents\supply_chain_analytics\data\processed\sales_analytics.csv
+2026-07-07 02:00:27 | INFO | 2.1 Validating raw analytical table...
+2026-07-07 02:00:27 | INFO | Validation report saved.
+2026-07-07 02:00:27 | INFO | 3. Cleaning data...
+2026-07-07 02:00:32 | INFO | Saved clean table: C:\Users\adrie\Documents\supply_chain_analytics\data\processed\sales_clean.csv
+2026-07-07 02:00:32 | INFO | 4. Adding business features...
+2026-07-07 02:00:36 | INFO | Saved featured table: C:\Users\adrie\Documents\supply_chain_analytics\data\processed\sales_featured.csv
+2026-07-07 02:00:36 | INFO | 5. Computing KPIs...
+2026-07-07 02:00:36 | INFO | KPI summary saved.
+2026-07-07 02:00:36 | INFO | 6. Exporting Power BI tables...
+2026-07-07 02:00:38 | INFO | Power BI tables exported successfully.
+2026-07-07 02:00:38 | INFO | 7. Generating automatic figures...
+2026-07-07 02:00:41 | INFO | Figures saved in: C:\Users\adrie\Documents\supply_chain_analytics\reports\figures
+2026-07-07 02:00:41 | INFO | Pipeline completed successfully in 18.34 seconds.
+2026-07-07 02:05:14 | INFO | ============================================================
+2026-07-07 02:05:14 | INFO | SUPPLY CHAIN ANALYTICS PLATFORM
+2026-07-07 02:05:14 | INFO | ============================================================
+2026-07-07 02:05:14 | INFO | 1. Loading raw datasets...
+2026-07-07 02:05:15 | INFO | Raw datasets loaded successfully.
+2026-07-07 02:05:15 | INFO | 2. Creating analytical sales table...
+2026-07-07 02:05:18 | INFO | Saved analytical table: C:\Users\adrie\Documents\supply_chain_analytics\data\processed\sales_analytics.csv
+2026-07-07 02:05:18 | INFO | 2.1 Validating raw analytical table...
+2026-07-07 02:05:18 | INFO | Validation report saved.
+2026-07-07 02:05:18 | INFO | 3. Cleaning data...
+2026-07-07 02:05:23 | INFO | Saved clean table: C:\Users\adrie\Documents\supply_chain_analytics\data\processed\sales_clean.csv
+2026-07-07 02:05:23 | INFO | 4. Adding business features...
+2026-07-07 02:05:27 | INFO | Saved featured table: C:\Users\adrie\Documents\supply_chain_analytics\data\processed\sales_featured.csv
+2026-07-07 02:05:27 | INFO | 5. Computing KPIs...
+2026-07-07 02:05:27 | INFO | KPI summary saved.
+2026-07-07 02:05:27 | INFO | 6. Exporting Power BI tables...
+2026-07-07 02:05:29 | INFO | Power BI tables exported successfully.
+2026-07-07 02:05:29 | INFO | 7. Generating automatic figures...
+2026-07-07 02:05:32 | INFO | Figures saved in: C:\Users\adrie\Documents\supply_chain_analytics\reports\figures
+2026-07-07 02:05:32 | INFO | 8. Generating business insights...
+2026-07-07 02:05:32 | INFO | Business insights saved in: C:\Users\adrie\Documents\supply_chain_analytics\reports\insights
+2026-07-07 02:05:32 | INFO | Pipeline completed successfully in 18.0 seconds.
+2026-07-07 02:11:20 | INFO | ============================================================
+2026-07-07 02:11:20 | INFO | SUPPLY CHAIN ANALYTICS PLATFORM
+2026-07-07 02:11:20 | INFO | ============================================================
+2026-07-07 02:11:20 | INFO | 1. Loading raw datasets...
+2026-07-07 02:11:21 | INFO | Raw datasets loaded successfully.
+2026-07-07 02:11:21 | INFO | 2. Creating analytical sales table...
+2026-07-07 02:11:24 | INFO | Saved analytical table: C:\Users\adrie\Documents\supply_chain_analytics\data\processed\sales_analytics.csv
+2026-07-07 02:11:24 | INFO | 2.1 Validating raw analytical table...
+2026-07-07 02:11:25 | INFO | Validation report saved.
+2026-07-07 02:11:25 | INFO | 3. Cleaning data...
+2026-07-07 02:11:29 | INFO | Saved clean table: C:\Users\adrie\Documents\supply_chain_analytics\data\processed\sales_clean.csv
+2026-07-07 02:11:29 | INFO | 4. Adding business features...
+2026-07-07 02:11:33 | INFO | Saved featured table: C:\Users\adrie\Documents\supply_chain_analytics\data\processed\sales_featured.csv
+2026-07-07 02:11:33 | INFO | 5. Computing KPIs...
+2026-07-07 02:11:33 | INFO | KPI summary saved.
+2026-07-07 02:11:33 | INFO | 6. Exporting Power BI tables...
+2026-07-07 02:11:35 | INFO | Power BI tables exported successfully.
+2026-07-07 02:11:35 | INFO | 7. Generating automatic figures...
+2026-07-07 02:11:38 | INFO | Figures saved in: C:\Users\adrie\Documents\supply_chain_analytics\reports\figures
+2026-07-07 02:11:38 | INFO | 8. Generating business insights...
+2026-07-07 02:11:38 | INFO | Business insights saved in: C:\Users\adrie\Documents\supply_chain_analytics\reports\insights
+2026-07-07 02:11:38 | INFO | Pipeline completed successfully in 17.56 seconds.
+2026-07-07 02:18:45 | INFO | ============================================================
+2026-07-07 02:18:45 | INFO | SUPPLY CHAIN ANALYTICS PLATFORM
+2026-07-07 02:18:45 | INFO | ============================================================
+2026-07-07 02:18:45 | INFO | 1. Loading raw datasets...
+2026-07-07 02:18:46 | INFO | Raw datasets loaded successfully.
+2026-07-07 02:18:46 | INFO | 2. Creating analytical sales table...
+2026-07-07 02:18:49 | INFO | Saved analytical table: C:\Users\adrie\Documents\supply_chain_analytics\data\processed\sales_analytics.csv
+2026-07-07 02:18:49 | INFO | 2.1 Validating raw analytical table...
+2026-07-07 02:18:49 | INFO | Validation report saved.
+2026-07-07 02:18:49 | INFO | 3. Cleaning data...
+2026-07-07 02:18:54 | INFO | Saved clean table: C:\Users\adrie\Documents\supply_chain_analytics\data\processed\sales_clean.csv
+2026-07-07 02:18:54 | INFO | 4. Adding business features...
+2026-07-07 02:18:58 | INFO | Saved featured table: C:\Users\adrie\Documents\supply_chain_analytics\data\processed\sales_featured.csv
+2026-07-07 02:18:58 | INFO | 5. Computing KPIs...
+2026-07-07 02:18:58 | INFO | KPI summary saved.
+2026-07-07 02:18:58 | INFO | 6. Exporting Power BI tables...
+2026-07-07 02:19:00 | INFO | Power BI tables exported successfully.
+2026-07-07 02:19:00 | INFO | 7. Generating automatic figures...
+2026-07-07 02:19:03 | INFO | Figures saved in: C:\Users\adrie\Documents\supply_chain_analytics\reports\figures
+2026-07-07 02:19:03 | INFO | 8. Generating business insights...
+2026-07-07 02:19:03 | INFO | Business insights saved in: C:\Users\adrie\Documents\supply_chain_analytics\reports\insights
+2026-07-07 02:19:03 | INFO | Pipeline completed successfully in 18.04 seconds.
+2026-07-07 15:08:20 | INFO | ============================================================
+2026-07-07 15:08:20 | INFO | Running pipeline: Supply Chain Analytics
+2026-07-07 15:08:20 | INFO | ============================================================
+2026-07-07 15:08:20 | INFO | [1/16] Running step: Load Multiple CSV Files
+2026-07-07 15:08:21 | INFO | [OK] Step completed: Load Multiple CSV Files in 1.12s
+2026-07-07 15:08:21 | INFO | [2/16] Running step: Create Olist Sales Table
+2026-07-07 15:08:22 | INFO | [OK] Step completed: Create Olist Sales Table in 0.87s
+2026-07-07 15:08:22 | INFO | [3/16] Running step: Validate Data Quality
+2026-07-07 15:08:22 | INFO | [OK] Step completed: Validate Data Quality in 0.46s
+2026-07-07 15:08:22 | INFO | [4/16] Running step: Drop Duplicates
+2026-07-07 15:08:23 | INFO | [OK] Step completed: Drop Duplicates in 0.47s
+2026-07-07 15:08:23 | INFO | [5/16] Running step: Fill Missing Values
+2026-07-07 15:08:23 | INFO | [OK] Step completed: Fill Missing Values in 0.1s
+2026-07-07 15:08:23 | INFO | [6/16] Running step: Convert Date Columns
+2026-07-07 15:08:23 | INFO | [OK] Step completed: Convert Date Columns in 0.6s
+2026-07-07 15:08:23 | INFO | [7/16] Running step: Add Olist Business Features
+2026-07-07 15:08:24 | INFO | [OK] Step completed: Add Olist Business Features in 0.16s
+2026-07-07 15:08:24 | INFO | [8/16] Running step: Compute Basic Metrics
+2026-07-07 15:08:24 | INFO | [OK] Step completed: Compute Basic Metrics in 0.16s
+2026-07-07 15:08:24 | INFO | [9/16] Running step: Compute GroupBy Metrics
+2026-07-07 15:08:24 | INFO | [OK] Step completed: Compute GroupBy Metrics in 0.13s
+2026-07-07 15:08:24 | INFO | [10/16] Running step: Compute Time Series Metrics
+2026-07-07 15:08:24 | INFO | [OK] Step completed: Compute Time Series Metrics in 0.4s
+2026-07-07 15:08:24 | INFO | [11/16] Running step: Export DataFrame to CSV
+2026-07-07 15:08:28 | INFO | [OK] Step completed: Export DataFrame to CSV in 4.1s
+2026-07-07 15:08:28 | INFO | [12/16] Running step: Export DataFrame to CSV
+2026-07-07 15:08:28 | INFO | [OK] Step completed: Export DataFrame to CSV in 0.0s
+2026-07-07 15:08:28 | INFO | [13/16] Running step: Export Multiple DataFrames to Excel
+2026-07-07 15:08:29 | INFO | [OK] Step completed: Export Multiple DataFrames to Excel in 0.28s
+2026-07-07 15:08:29 | INFO | [14/16] Running step: Generate Line Plot
+2026-07-07 15:08:29 | INFO | [OK] Step completed: Generate Line Plot in 0.58s
+2026-07-07 15:08:29 | INFO | [15/16] Running step: Generate Bar Plot
+2026-07-07 15:08:30 | INFO | [OK] Step completed: Generate Bar Plot in 0.77s
+2026-07-07 15:08:30 | INFO | [16/16] Running step: Generate Markdown Report
+2026-07-07 15:08:30 | INFO | [OK] Step completed: Generate Markdown Report in 0.0s
+2026-07-07 15:08:30 | INFO | ============================================================
+2026-07-07 15:08:30 | INFO | Pipeline completed successfully in 10.2s.
+2026-07-07 15:08:30 | INFO | ============================================================

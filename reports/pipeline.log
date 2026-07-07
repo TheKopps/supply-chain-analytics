@@ -140,3 +140,41 @@
 2026-07-07 15:08:30 | INFO | ============================================================
 2026-07-07 15:08:30 | INFO | Pipeline completed successfully in 10.2s.
 2026-07-07 15:08:30 | INFO | ============================================================
+2026-07-08 00:35:23 | INFO | ============================================================
+2026-07-08 00:35:23 | INFO | Running pipeline: Supply Chain Analytics
+2026-07-08 00:35:23 | INFO | ============================================================
+2026-07-08 00:35:23 | INFO | [1/16] Running step: Load Multiple CSV Files
+2026-07-08 00:35:24 | INFO | [OK] Step completed: Load Multiple CSV Files in 1.03s
+2026-07-08 00:35:24 | INFO | [2/16] Running step: Create Olist Sales Table
+2026-07-08 00:35:25 | INFO | [OK] Step completed: Create Olist Sales Table in 0.81s
+2026-07-08 00:35:25 | INFO | [3/16] Running step: Validate Data Quality
+2026-07-08 00:35:25 | INFO | [OK] Step completed: Validate Data Quality in 0.46s
+2026-07-08 00:35:25 | INFO | [4/16] Running step: Drop Duplicates
+2026-07-08 00:35:26 | INFO | [OK] Step completed: Drop Duplicates in 0.46s
+2026-07-08 00:35:26 | INFO | [5/16] Running step: Fill Missing Values
+2026-07-08 00:35:26 | INFO | [OK] Step completed: Fill Missing Values in 0.09s
+2026-07-08 00:35:26 | INFO | [6/16] Running step: Convert Date Columns
+2026-07-08 00:35:26 | INFO | [OK] Step completed: Convert Date Columns in 0.58s
+2026-07-08 00:35:26 | INFO | [7/16] Running step: Add Olist Business Features
+2026-07-08 00:35:26 | INFO | [OK] Step completed: Add Olist Business Features in 0.15s
+2026-07-08 00:35:26 | INFO | [8/16] Running step: Compute Basic Metrics
+2026-07-08 00:35:26 | INFO | [OK] Step completed: Compute Basic Metrics in 0.13s
+2026-07-08 00:35:26 | INFO | [9/16] Running step: Compute GroupBy Metrics
+2026-07-08 00:35:27 | INFO | [OK] Step completed: Compute GroupBy Metrics in 0.12s
+2026-07-08 00:35:27 | INFO | [10/16] Running step: Compute Time Series Metrics
+2026-07-08 00:35:27 | INFO | [OK] Step completed: Compute Time Series Metrics in 0.4s
+2026-07-08 00:35:27 | INFO | [11/16] Running step: Export DataFrame to CSV
+2026-07-08 00:35:31 | INFO | [OK] Step completed: Export DataFrame to CSV in 4.03s
+2026-07-08 00:35:31 | INFO | [12/16] Running step: Export DataFrame to CSV
+2026-07-08 00:35:31 | INFO | [OK] Step completed: Export DataFrame to CSV in 0.0s
+2026-07-08 00:35:31 | INFO | [13/16] Running step: Export Multiple DataFrames to Excel
+2026-07-08 00:35:31 | INFO | [OK] Step completed: Export Multiple DataFrames to Excel in 0.34s
+2026-07-08 00:35:31 | INFO | [14/16] Running step: Generate Line Plot
+2026-07-08 00:35:32 | INFO | [OK] Step completed: Generate Line Plot in 1.02s
+2026-07-08 00:35:32 | INFO | [15/16] Running step: Generate Bar Plot
+2026-07-08 00:35:33 | INFO | [OK] Step completed: Generate Bar Plot in 0.76s
+2026-07-08 00:35:33 | INFO | [16/16] Running step: Generate Markdown Report
+2026-07-08 00:35:33 | INFO | [OK] Step completed: Generate Markdown Report in 0.0s
+2026-07-08 00:35:33 | INFO | ============================================================
+2026-07-08 00:35:33 | INFO | Pipeline completed successfully in 10.41s.
+2026-07-08 00:35:33 | INFO | ============================================================

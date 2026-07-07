@@ -1,0 +1,31 @@
+project:
+  name: Supply Chain Analytics
+  version: 0.1.0
+
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  powerbi_data: data/powerbi
+  reports: reports
+  figures: reports/figures
+
+raw_files:
+  customers: olist_customers_dataset.csv
+  orders: olist_orders_dataset.csv
+  order_items: olist_order_items_dataset.csv
+  payments: olist_order_payments_dataset.csv
+  products: olist_products_dataset.csv
+  sellers: olist_sellers_dataset.csv
+  reviews: olist_order_reviews_dataset.csv
+
+outputs:
+  sales_featured: data/processed/sales_featured.csv
+  validation_report: reports/validation_report.csv
+  executive_dashboard: reports/executive_dashboard.xlsx
+  executive_report: reports/executive_report.md
+  pipeline_log: reports/pipeline.log
+  monthly_revenue_figure: reports/figures/monthly_revenue.png
+  revenue_by_category_figure: reports/figures/revenue_by_category.png
+
+pipeline:
+  stop_on_error: true

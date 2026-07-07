@@ -37,3 +37,12 @@ _Showing 10 of 74 rows._
 | missing_values | WARNING | Missing values check completed. | {'order_id': 0.0, 'customer_id': 0.0, 'order_status': 0.0, 'order_purchase_timestamp': 0.0, 'order_approved_at': 0.0015, 'order_delivered_carrier_date': 0.0175, 'order_delivered_customer_date': 0.0287, 'order_estimated_delivery_date': 0.0, 'customer_unique_id': 0.0, 'customer_zip_code_prefix': 0.0, 'customer_city': 0.0, 'customer_state': 0.0, 'order_item_id': 0.007, 'product_id': 0.007, 'seller_id': 0.007, 'shipping_limit_date': 0.007, 'price': 0.007, 'freight_value': 0.007, 'payment_sequential': 0.0, 'payment_type': 0.0, 'payment_installments': 0.0, 'payment_value': 0.0, 'product_category_name': 0.0213, 'product_name_lenght': 0.0213, 'product_description_lenght': 0.0213, 'product_photos_qty': 0.0213, 'product_weight_g': 0.0072, 'product_length_cm': 0.0072, 'product_height_cm': 0.0072, 'product_width_cm': 0.0072, 'seller_zip_code_prefix': 0.007, 'seller_city': 0.007, 'seller_state': 0.007, 'review_id': 0.0084, 'review_score': 0.0084, 'review_comment_title': 0.8826, 'review_comment_message': 0.5783, 'review_creation_date': 0.0084, 'review_answer_timestamp': 0.0084} |
 | non_negative_values | PASS | Non-negative values check completed. | {'price': 0, 'freight_value': 0} |
 
+## Business Recommendations
+
+- Total revenue reached 16,643,731.30. Revenue monitoring should remain a key priority for business reporting.
+- Average order value is 140.68. Marketing actions could focus on bundles or cross-selling to increase basket size.
+- Delayed orders represent 6.34% of orders. Logistics performance should be monitored closely, especially sellers or categories with recurring delays.
+- Average review score is strong at 4.02/5. Maintaining delivery reliability and product quality should help preserve customer satisfaction.
+- The top revenue category is 'beleza_saude' with 1,491,397.76 in revenue. This category should be prioritized in commercial and inventory analysis.
+- All data quality checks passed successfully, increasing confidence in the generated analytics outputs.
+

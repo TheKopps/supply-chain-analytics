@@ -22,6 +22,7 @@ from src.domain.olist_steps import (
     AddOlistBusinessFeaturesStep,
     CreateOlistSalesTableStep,
 )
+from src.domain.powerbi_tables import BuildPowerBITablesStep
 
 PROJECT_ROOT = Path(__file__).resolve().parent
 CONFIG_PATH = PROJECT_ROOT / "config.yaml"
@@ -191,6 +192,17 @@ pipeline.add_step(
 )
 
 pipeline.add_step(
+    BuildPowerBITablesStep(
+        input_key="sales_featured",
+        fact_key="fact_sales",
+        customers_key="dim_customers",
+        products_key="dim_products",
+        sellers_key="dim_sellers",
+        dates_key="dim_dates",
+    )
+)
+
+pipeline.add_step(
     CSVExportStep(
         input_key="sales_featured",
         output_path=config.resolve_path(
@@ -209,6 +221,61 @@ pipeline.add_step(
             base_path=PROJECT_ROOT,
         ),
         output_key="quality_report_export_path",
+    )
+)
+
+pipeline.add_step(
+    CSVExportStep(
+        input_key="fact_sales",
+        output_path=config.resolve_path(
+            "outputs.fact_sales",
+            base_path=PROJECT_ROOT,
+        ),
+        output_key="fact_sales_export_path",
+    )
+)
+
+pipeline.add_step(
+    CSVExportStep(
+        input_key="dim_customers",
+        output_path=config.resolve_path(
+            "outputs.dim_customers",
+            base_path=PROJECT_ROOT,
+        ),
+        output_key="dim_customers_export_path",
+    )
+)
+
+pipeline.add_step(
+    CSVExportStep(
+        input_key="dim_products",
+        output_path=config.resolve_path(
+            "outputs.dim_products",
+            base_path=PROJECT_ROOT,
+        ),
+        output_key="dim_products_export_path",
+    )
+)
+
+pipeline.add_step(
+    CSVExportStep(
+        input_key="dim_sellers",
+        output_path=config.resolve_path(
+            "outputs.dim_sellers",
+            base_path=PROJECT_ROOT,
+        ),
+        output_key="dim_sellers_export_path",
+    )
+)
+
+pipeline.add_step(
+    CSVExportStep(
+        input_key="dim_dates",
+        output_path=config.resolve_path(
+            "outputs.dim_dates",
+            base_path=PROJECT_ROOT,
+        ),
+        output_key="dim_dates_export_path",
     )
 )
 

@@ -1,26 +1,24 @@
-from src.ingestion.data_loader import load_raw_datasets, create_sales_table
-from src.quality.cleaning import clean_sales_data
-from src.quality.validation import validate_sales_data
-from src.features.feature_engineering import add_features
-from src.business_metrics import compute_kpis
-from src.export.powerbi import export_powerbi_tables
-from src.visualization.plots import generate_all_figures
-from src.insights.recommendations import export_business_insights
-from src.utils.logger import setup_logger
-
-from src.analytics.metrics_engine import compute_all_metrics
-
 import time
 
+from src.analytics.metrics_engine import compute_all_metrics
+from src.export.powerbi import export_powerbi_tables
+from src.features.feature_engineering import add_features
+from src.ingestion.data_loader import create_sales_table, load_raw_datasets
+from src.insights.recommendations import export_business_insights
+from src.quality.cleaning import clean_sales_data
+from src.quality.validation import validate_sales_data
+from src.utils.logger import setup_logger
+from src.visualization.plots import generate_all_figures
+
 from config import (
-    DATA_RAW,
-    DATA_PROCESSED,
     DATA_POWERBI,
+    DATA_PROCESSED,
+    DATA_RAW,
+    FIGURES_PATH,
+    INSIGHTS_PATH,
     SALES_ANALYTICS_PATH,
     SALES_CLEAN_PATH,
     SALES_FEATURED_PATH,
-    FIGURES_PATH,
-    INSIGHTS_PATH,
 )
 
 

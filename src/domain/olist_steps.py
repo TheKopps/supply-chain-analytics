@@ -1,7 +1,5 @@
 from typing import Any
 
-import pandas as pd
-
 from analytics_framework import PipelineStep
 
 
@@ -68,8 +66,7 @@ class AddOlistBusinessFeaturesStep(PipelineStep):
         sales["purchase_hour"] = sales["order_purchase_timestamp"].dt.hour
 
         sales["delivery_time_days"] = (
-            sales["order_delivered_customer_date"]
-            - sales["order_purchase_timestamp"]
+            sales["order_delivered_customer_date"] - sales["order_purchase_timestamp"]
         ).dt.days
 
         sales["delivery_delay_days"] = (

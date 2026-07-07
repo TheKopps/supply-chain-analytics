@@ -22,7 +22,6 @@ from src.domain.olist_steps import (
     CreateOlistSalesTableStep,
 )
 
-
 PROJECT_ROOT = Path(__file__).resolve().parent
 
 DATA_RAW = PROJECT_ROOT / "data" / "raw"

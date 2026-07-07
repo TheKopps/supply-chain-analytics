@@ -17,6 +17,7 @@ from analytics_framework.quality import DataQualityValidatorStep
 from analytics_framework.reporting import MarkdownReportStep
 from analytics_framework.visualization import BarPlotStep, LinePlotStep
 
+from src.domain.insights import GenerateOlistBusinessInsightsStep
 from src.domain.olist_steps import (
     AddOlistBusinessFeaturesStep,
     CreateOlistSalesTableStep,
@@ -181,6 +182,15 @@ pipeline.add_step(
 )
 
 pipeline.add_step(
+    GenerateOlistBusinessInsightsStep(
+        metrics_key="executive_metrics",
+        category_metrics_key="category_metrics",
+        quality_report_key="quality_report",
+        output_key="business_recommendations",
+    )
+)
+
+pipeline.add_step(
     CSVExportStep(
         input_key="sales_featured",
         output_path=config.resolve_path(
@@ -258,6 +268,7 @@ pipeline.add_step(
             "executive_metrics",
             "category_metrics",
             "quality_report",
+            "business_recommendations",
         ],
     )
 )

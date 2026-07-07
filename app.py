@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from analytics_framework import Pipeline, setup_logger
+from analytics_framework import Config, Pipeline, setup_logger
 from analytics_framework.analytics import (
     BasicMetricsStep,
     GroupByMetricsStep,
@@ -23,27 +23,21 @@ from src.domain.olist_steps import (
 )
 
 PROJECT_ROOT = Path(__file__).resolve().parent
+CONFIG_PATH = PROJECT_ROOT / "config.yaml"
 
-DATA_RAW = PROJECT_ROOT / "data" / "raw"
-DATA_PROCESSED = PROJECT_ROOT / "data" / "processed"
-DATA_POWERBI = PROJECT_ROOT / "data" / "powerbi"
-REPORTS = PROJECT_ROOT / "reports"
-FIGURES = REPORTS / "figures"
+config = Config.from_yaml(CONFIG_PATH)
+
+DATA_RAW = config.resolve_path("paths.raw_data", base_path=PROJECT_ROOT)
+
+files = {
+    dataset_name: DATA_RAW / file_name
+    for dataset_name, file_name in config.get("raw_files").items()
+}
 
 logger = setup_logger(
     name="supply_chain_analytics",
-    log_file=REPORTS / "pipeline.log",
+    log_file=config.resolve_path("outputs.pipeline_log", base_path=PROJECT_ROOT),
 )
-
-files = {
-    "customers": DATA_RAW / "olist_customers_dataset.csv",
-    "orders": DATA_RAW / "olist_orders_dataset.csv",
-    "order_items": DATA_RAW / "olist_order_items_dataset.csv",
-    "payments": DATA_RAW / "olist_order_payments_dataset.csv",
-    "products": DATA_RAW / "olist_products_dataset.csv",
-    "sellers": DATA_RAW / "olist_sellers_dataset.csv",
-    "reviews": DATA_RAW / "olist_order_reviews_dataset.csv",
-}
 
 date_columns = [
     "order_purchase_timestamp",
@@ -58,8 +52,9 @@ date_columns = [
 
 
 pipeline = Pipeline(
-    project_name="Supply Chain Analytics",
+    project_name=config.get("project.name"),
     logger=logger,
+    stop_on_error=config.get("pipeline.stop_on_error", True),
 )
 
 pipeline.add_step(
@@ -188,7 +183,10 @@ pipeline.add_step(
 pipeline.add_step(
     CSVExportStep(
         input_key="sales_featured",
-        output_path=DATA_PROCESSED / "sales_featured.csv",
+        output_path=config.resolve_path(
+            "outputs.sales_featured",
+            base_path=PROJECT_ROOT,
+        ),
         output_key="sales_featured_export_path",
     )
 )
@@ -196,7 +194,10 @@ pipeline.add_step(
 pipeline.add_step(
     CSVExportStep(
         input_key="quality_report",
-        output_path=REPORTS / "validation_report.csv",
+        output_path=config.resolve_path(
+            "outputs.validation_report",
+            base_path=PROJECT_ROOT,
+        ),
         output_key="quality_report_export_path",
     )
 )
@@ -209,7 +210,10 @@ pipeline.add_step(
             "Monthly Revenue": "monthly_revenue",
             "Quality Report": "quality_report",
         },
-        output_path=REPORTS / "executive_dashboard.xlsx",
+        output_path=config.resolve_path(
+            "outputs.executive_dashboard",
+            base_path=PROJECT_ROOT,
+        ),
     )
 )
 
@@ -218,7 +222,10 @@ pipeline.add_step(
         input_key="monthly_revenue",
         x_column="order_purchase_timestamp",
         y_column="sum_total_order_value",
-        output_path=FIGURES / "monthly_revenue.png",
+        output_path=config.resolve_path(
+            "outputs.monthly_revenue_figure",
+            base_path=PROJECT_ROOT,
+        ),
         title="Monthly Revenue Evolution",
         xlabel="Month",
         ylabel="Revenue",
@@ -230,7 +237,10 @@ pipeline.add_step(
         input_key="category_metrics",
         x_column="product_category_name",
         y_column="total_order_value",
-        output_path=FIGURES / "revenue_by_category.png",
+        output_path=config.resolve_path(
+            "outputs.revenue_by_category_figure",
+            base_path=PROJECT_ROOT,
+        ),
         title="Revenue by Product Category",
         xlabel="Category",
         ylabel="Revenue",
@@ -240,7 +250,10 @@ pipeline.add_step(
 pipeline.add_step(
     MarkdownReportStep(
         title="Supply Chain Analytics Executive Report",
-        output_path=REPORTS / "executive_report.md",
+        output_path=config.resolve_path(
+            "outputs.executive_report",
+            base_path=PROJECT_ROOT,
+        ),
         context_keys=[
             "executive_metrics",
             "category_metrics",

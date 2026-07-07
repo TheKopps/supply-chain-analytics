@@ -39,10 +39,10 @@ _Showing 10 of 74 rows._
 
 ## Business Recommendations
 
-- Total revenue reached 16,643,731.30. Revenue monitoring should remain a key priority for business reporting.
-- Average order value is 140.68. Marketing actions could focus on bundles or cross-selling to increase basket size.
-- Delayed orders represent 6.34% of orders. Logistics performance should be monitored closely, especially sellers or categories with recurring delays.
-- Average review score is strong at 4.02/5. Maintaining delivery reliability and product quality should help preserve customer satisfaction.
-- The top revenue category is 'beleza_saude' with 1,491,397.76 in revenue. This category should be prioritized in commercial and inventory analysis.
-- All data quality checks passed successfully, increasing confidence in the generated analytics outputs.
+- Total revenue reached 16,643,731.30. Keep revenue monitoring as a key reporting priority.
+- Average order value is 140.68. Marketing could focus on bundles and cross-selling.
+- Delayed orders represent 6.34% of orders. Logistics performance should be monitored.
+- Average review score is strong at 4.02/5. Delivery reliability should remain a priority.
+- The top revenue category is 'beleza_saude' with 1,491,397.76 in revenue. This category should be prioritized.
+- All data quality checks passed successfully. The generated analytics outputs are reliable.
 
